@@ -77,7 +77,7 @@ export default function Search() {
     setSearched(true);
     
     try{
-      const response = await axios.get(`http://localhost:5000/api/users/search?name=${text}`);
+      const response = await axios.get(`https://demo-1-4xxd.onrender.com/api/users/search?name=${text}`);
       console.log(response.data);
       setMovies(response.data || []);
     }
